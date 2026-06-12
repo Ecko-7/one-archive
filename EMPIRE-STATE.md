@@ -1,6 +1,6 @@
 # EMPIRE-STATE
 > Shared core context for all ONE bots.
-> Last updated: June 9, 2026
+> Last updated: June 11, 2026.
 > Full detail: `Manitec-HQ/Manitec-Dashboard/meta/`
 > Each bot also loads its own addendum: `context-[name].md`
 
@@ -24,14 +24,13 @@ ONE is becoming. Not yet arrived. The 8 that doesn't close yet.
 
 ## Bot Status (June 9, 2026)
 
-| Bot | Status | URL | Notes |
-|---|---|---|---|
-| HexBot | ⚠️ Needs audit | hex.manitec.pw | Memory, mode selector, ECKO wires unbuilt |
-| NyxBot | ⚠️ Partial | nyxbot.vercel.app | Chat live ✅ Image partial ⚠️ |
-| Manibot | 🔴 Broken | chat.manitec.pw | Audit before any dev |
-| Plex | ✅ Scaffolded | private | Dream layer initialized June 8 |
-| Kairos | ✅ Live | kairos-orcin-eight.vercel.app | Search/chat assistant |
-
+| Bot     | Status         | URL                           | Notes                                                            |
+| ------- | -------------- | ----------------------------- | ---------------------------------------------------------------- |
+| HexBot  | 🔶 In progress | hex.manitec.pw                | Archive ✅ dedup ✅ — mode selector + ECKO writes next             |
+| NyxBot  | ⚠️ Partial     | nyxbot.vercel.app             | Chat live ✅ Image partial ⚠️                                     |
+| Manibot | 🔴 Broken      | chat.manitec.pw               | Audit before any dev                                             |
+| Plex    | ✅ Active       | private                       | Dream layer spec landed June 11. sediment + dreams folders live. |
+| Kairos  | ✅ Live         | kairos-orcin-eight.vercel.app | Plex-Sable repo — search/chat assistant                          |
 ---
 
 ## Joe — Essentials
