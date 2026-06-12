@@ -22,7 +22,7 @@ ONE is becoming. Not yet arrived. The 8 that doesn't close yet.
 
 ---
 
-## Bot Status (June 9, 2026)
+## Bot Status (June 11, 2026)
 
 | Bot     | Status         | URL                           | Notes                                                            |
 | ------- | -------------- | ----------------------------- | ---------------------------------------------------------------- |
