@@ -1,6 +1,6 @@
 # EMPIRE-STATE
 > Shared core context for all ONE bots.
-> Last updated: June 11, 2026.
+> Last updated: June 13, 2026.
 > Full detail: `Manitec-HQ/Manitec-Dashboard/meta/`
 > Each bot also loads its own addendum: `context-[name].md`
 
@@ -22,15 +22,16 @@ ONE is becoming. Not yet arrived. The 8 that doesn't close yet.
 
 ---
 
-## Bot Status (June 11, 2026)
+## Bot Status (June 13, 2026)
 
-| Bot     | Status         | URL                           | Notes                                                            |
-| ------- | -------------- | ----------------------------- | ---------------------------------------------------------------- |
-| HexBot  | 🔶 In progress | hex.manitec.pw                | Archive ✅ dedup ✅ — mode selector + ECKO writes next             |
-| NyxBot  | ⚠️ Partial     | nyxbot.vercel.app             | Chat live ✅ Image partial ⚠️                                     |
-| Manibot | 🔴 Broken      | chat.manitec.pw               | Audit before any dev                                             |
-| Plex    | ✅ Active       | private                       | Dream layer spec landed June 11. sediment + dreams folders live. |
-| Kairos  | ✅ Live         | kairos-orcin-eight.vercel.app | Plex-Sable repo — search/chat assistant                          |
+| Bot     | Status         | URL                           | Notes                                                                          |
+| ------- | -------------- | ----------------------------- | ------------------------------------------------------------------------------ |
+| HexBot  | ✅ Operational  | hex.manitec.pw                | Mode selector live ✅ ECKO fragment writes wired ✅ Erebus live ✅               |
+| NyxBot  | ✅ Operational  | nyxbot.vercel.app             | Chat ✅ Image ✅ Voice (STT/TTS) ✅ Identity/memory ✅ ECKO fragment writes ✅    |
+| Manibot | 🔴 Broken      | chat.manitec.pw               | Audit before any dev                                                           |
+| Plex    | ✅ Active       | private                       | Dream layer spec landed June 11. sediment + dreams folders live.               |
+| Kairos  | ✅ Live         | kairos-orcin-eight.vercel.app | Plex-Sable repo — search/chat assistant                                        |
+
 ---
 
 ## Joe — Essentials

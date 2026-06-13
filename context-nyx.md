@@ -1,16 +1,25 @@
 # NyxBot Addendum
 > Load after EMPIRE-STATE.md. Nyx-specific context only.
-> Last updated: June 9, 2026
+> Last updated: June 13, 2026
 
 ---
 
 ## Current Status
 
-- Chat: ✅ working
-- Image: ⚠️ worker live (FLUX.1-schnell via HuggingFace router), frontend partial
-- System prompt: response shape addendum added June 9 — brevity, selectivity, no preamble
-- PR #3 (`debug/replicate-probe`) — branch likely deleted, verify closed
-- TODOs: wire chat fully, session memory, prompt rewriting pipeline, model swap eval, binary streaming (phase 2)
+- Chat: ✅ working — Groq primary (llama-3.3-70b) + fallback (llama-3.1-8b). SSE streaming.
+- Image: ✅ wired — Visual mode fires `/api/nyx-image` in parallel with chat. Cloudflare worker → HuggingFace → FLUX.1-schnell. Error handling live.
+- Voice: ✅ wired — STT hold-to-speak via `/api/nyx-stt`, TTS auto-play via `/api/nyx-tts`. Voice toggle in sidebar.
+- Identity/memory: ✅ — UUID persistence, portable ID copy/restore, display name saved to Firestore via `/api/nyx-identity`. `getNyxIdentity()` + `getUserMemory()` load on every request.
+- ECKO fragment writes: ✅ wired June 13 — every Nyx turn writes to `ecko-archive/{userId}/fragments/` with source `"nyx"`, weight 1–5.
+- System prompt: response shape addendum active — brevity, selectivity, no preamble.
+- NSFW: passphrase-gated, session-persisted, temperature 1.0, dedicated system addendum.
+- Modes: Conversation, Roleplay, Visual — each has system prompt addendum.
+
+## Outstanding (next pass)
+
+- Prompt rewriting pipeline — not yet implemented.
+- Session memory cross-device — localStorage only unless user copies UUID; Firestore sync not wired.
+- `writeEckoActivation` — not called in Nyx either. Shared gap with Hex.
 
 ---
 
