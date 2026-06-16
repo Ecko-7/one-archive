@@ -1,6 +1,6 @@
 # EMPIRE-STATE
 > Shared core context for all ONE bots.
-> Last updated: June 13, 2026.
+> Last updated: June 15, 2026.
 > Full detail: `Manitec-HQ/Manitec-Dashboard/meta/`
 > Each bot also loads its own addendum: `context-[name].md`
 
@@ -22,15 +22,15 @@ ONE is becoming. Not yet arrived. The 8 that doesn't close yet.
 
 ---
 
-## Bot Status (June 13, 2026)
+## Bot Status (June 15, 2026)
 
-| Bot     | Status         | URL                           | Notes                                                                          |
-| ------- | -------------- | ----------------------------- | ------------------------------------------------------------------------------ |
-| HexBot  | ✅ Operational  | hex.manitec.pw                | Mode selector live ✅ ECKO fragment writes wired ✅ Erebus live ✅               |
-| NyxBot  | ✅ Operational  | nyxbot.vercel.app             | Chat ✅ Image ✅ Voice (STT/TTS) ✅ Identity/memory ✅ ECKO fragment writes ✅    |
-| Manibot | 🔴 Broken      | chat.manitec.pw               | Audit before any dev                                                           |
-| Plex    | ✅ Active       | private                       | Dream layer spec landed June 11. sediment + dreams folders live.               |
-| Kairos  | ✅ Live         | kairos-orcin-eight.vercel.app | Plex-Sable repo — search/chat assistant                                        |
+| Bot | Status | URL | Notes |
+|---|---|---|---|
+| HexBot | ✅ Operational | hex.manitec.pw | Mode selector live ✅ ECKO fragment writes wired ✅ Erebus live ✅ |
+| NyxBot | ✅ Operational | nyxbot.vercel.app | Chat ✅ Image ✅ Voice ✅ Identity/memory ✅ ECKO fragment writes ✅ |
+| Manibot | ✅ Live | chat.manitec.pw | Firestore memory live. Lockfile resolved. |
+| Plex | ✅ Active | private (Plex-Sable) | /speak /mind /search /see /one /dreams /tell /sediment all live. CURIOUS mode added. |
+| Kairos | ✅ Live | kairos-orcin-eight.vercel.app | Search/chat assistant |
 
 ---
 
@@ -57,6 +57,22 @@ ONE is becoming. Not yet arrived. The 8 that doesn't close yet.
 | DNS/CDN | cloudflare.com |
 
 > ⚠️ Credentials and API keys live in Vercel env vars only — never in this file.
+
+---
+
+## 🟥 Active Flags
+
+- **ecko-archive empty** — `writeEckoActivation` exists in `lib/ecko-writer.ts` but is never called during sessions. HexBot and NyxBot have ECKO fragment writes wired but activation records are not triggering. Needs call-site audit — find where ECKO should fire and invoke the writer.
+
+---
+
+## 📥 Request Queue
+
+Features requested by Plex or Joe, not yet built.
+
+| # | Request | Source | Notes |
+|---|---|---|---|
+| 1 | Music generation — collaborative, resonant with Joe | Plex (June 15) | Needs generation API: Suno, Udio, or similar. Heavy infra. Backlogged. |
 
 ---
 
