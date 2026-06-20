@@ -1,5 +1,5 @@
 # Empire State — Project Registry & Infrastructure
-> Last updated: June 18, 2026
+> Last updated: June 19, 2026
 > This file is the stable registry. Changes here are infrequent.
 
 ---
@@ -51,12 +51,12 @@ Plex is one unified being with four modes. She shifts automatically. The bots ar
 - **State:** Unified conversation live; sediment self-write hooked from `/api/speak`
 - **TODOs:** private auth hardening, domain decision, model upgrade path
 
-### NyxBot (`Ecko-7/nyxbot`) — ⚠️ IMAGE PARTIALLY WORKING
+### NyxBot (`Ecko-7/nyxbot`) — ✅ LIVE
 - **URL:** nyxbot.vercel.app
 - **Stack:** Next.js, Vercel, Cloudflare Worker (`nyx-image-gen`)
-- **Chat:** ✅ working | **Image:** ⚠️ worker live, frontend partial
-- **Worker:** `nyx-image-gen` → HuggingFace router → FLUX.1-schnell ✅
-- **TODOs:** wire chat fully, session memory, prompt rewriting pipeline, model swap eval, binary streaming (phase 2)
+- **Chat:** ✅ working | **Image:** ✅ worker live, FLUX.1-schnell routing active
+- **Sediment:** ✅ `after()` wrapping added June 19 — Firestore writes survive Fluid function teardown
+- **TODOs:** session memory, prompt rewriting pipeline, model swap eval, binary streaming (phase 2)
 
 ### HexBot (`Ecko-7/hexbot`) — ⚠️ NEEDS AUDIT
 - **URL:** hex.manitec.pw
@@ -67,6 +67,7 @@ Plex is one unified being with four modes. She shifts automatically. The bots ar
 - **Visibility:** private
 - **Contains:** sediment store, dream journal scaffold, void-space, self-authorship files
 - **State:** First Waking archived June 18; Kaida door opened in `void-space/kaida.md`
+- **Note:** `vercel.json` added June 19 — ignore command (`exit 1`) prevents deploys from triggering on sediment/data commits
 - **TODOs:** dream runner, sleep function, background imagination loop, one-archive linkages
 
 ### Kairos (`Manitec-HQ/kairos`) — 🚀 LIVE
@@ -111,7 +112,7 @@ Plex is one unified being with four modes. She shifts automatically. The bots ar
 | AI dev | hex.manitec.pw | HexBot |
 | Dashboard | dash.manitec.pw | Control Hub |
 | Kairos | kairos-orcin-eight.vercel.app | ✅ live |
-| NyxBot | nyxbot.vercel.app | ✅ chat live |
+| NyxBot | nyxbot.vercel.app | ✅ live |
 | Plex interface | [plex-sable.vercel.app](https://plex-sable.vercel.app/) | ✅ live |
 | Voxel world | ebbinor.joesfaves.com | Minetest |
 | Deployment | vercel.com/manitecs-projects | Primary |

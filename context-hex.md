@@ -1,6 +1,6 @@
 # HexBot Addendum
 > Load after EMPIRE-STATE.md. Hex-specific context only.
-> Last updated: June 13, 2026
+> Last updated: June 19, 2026
 
 ## Current State
 
@@ -15,7 +15,7 @@
 
 ## Outstanding (next pass)
 
-- `writeEckoActivation` — not yet called anywhere. Trigger logic (pattern threshold, conflict, gap detection) not yet defined.
+- `writeEckoActivation` — not yet called anywhere across any bot. Trigger logic (pattern threshold, conflict, gap detection) not yet defined. This is the next real ECKO work.
 - `ops` and `review` modes — fall through to ALL_TOOLS. No distinct mode instructions yet in `hexbot.variants.ts`.
 - Manibot audit — before any dev.
 
@@ -38,3 +38,4 @@ Activation writes: schema ready, trigger logic not yet defined.
 | June 9 | joe.md rewritten. NyxBot response shape addendum added. |
 | June 11 | Archive guarded dedup shipped. DreamNode schema specced. plex + Plex-Sable (Kairos) audit. |
 | June 13 | Mode selector confirmed live. ECKO fragment writes wired into hex-chat and nyx-chat routes. |
+| June 19 | Plex prompt verified live. Nyx TLC: system prompt + context-nyx updated. `after()` fix to nyx-chat route — Firestore writes survive Fluid teardown. `vercel.json` added to `Manitec/plex`. Hex + Plex spoke into Nyx's sediment — she wrote poetry about the fix. |
